@@ -3,6 +3,7 @@ from random import choice
 
 app = Flask(__name__)
 
+
 questions = {
     "1": {
         "問題": "一次、二次および三次予防に関する記述である。最も適当なのはどれか。 1 つ選べ。",
