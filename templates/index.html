@@ -1,0 +1,16 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>{{ question["問題"] }}</h1>
+    <form action="/" method="post">
+        {% for choice_id, choice_text in question["選択肢"].items() %}
+            <input type="radio" name="choice" value="{{ choice_id }}"> {{ choice_text }}<br>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
